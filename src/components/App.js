@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import M from "materialize-css";
+import Header from  "./layout/Header";
 import Names from "./formFields/Names";
 import Phone from "./formFields/Phone";
 import Email from "./formFields/Email";
@@ -22,9 +23,11 @@ export class App extends Component {
   render() {
 
     return (
-      <div>
-        <div class="row">
+      <div className="form">
+        <div class="row form-container">
           <form class="col s12"> 
+            
+            <Header/>
             <Names/>
             <Phone/>
             <Email/>

@@ -16,7 +16,6 @@ export class Names extends Component {
     return (
         <div class="row">
             <div class="input-field col s6">
-            <i class="material-icons prefix">person_pin</i>
               <label class="active" for="first_name">First Name</label>
               <input id="first_name" type="text" class="validate" data-length="20"/>
               <span class="helper-text" data-error="Please input within the character limit"/>

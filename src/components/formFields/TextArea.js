@@ -16,7 +16,6 @@ export class TextArea extends Component {
     return (
         <div class="row">
           <div class="input-field col s12">
-            <i class="material-icons prefix">mode_edit</i>
             <label class="active" for="comments"> Additional Comments (Optional)</label>  
             <textarea id="comments" class="materialize-textarea" data-length="170"></textarea>        
           </div>
