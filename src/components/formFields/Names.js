@@ -1,10 +1,14 @@
-import React, {Component} from 'react';
+import React, {Component} from "react";
 import M from "materialize-css";
+
+document.addEventListener("DOMContentLoaded", function () {
+  const textNeedCount = document.querySelectorAll("#first_name, #last_name");
+  M.CharacterCounter.init(textNeedCount);
+});
 
 export class Names extends Component {
 
   componentDidMount() {
-    // Auto initialize all the things!
     M.AutoInit();
   }
 
@@ -12,12 +16,15 @@ export class Names extends Component {
     return (
         <div class="row">
             <div class="input-field col s6">
-            <input placeholder="First Name" id="first_name" type="text" class="validate"/>
-            {/* <label for="first_name">First Name</label> */}
+            <i class="material-icons prefix">person_pin</i>
+              <label class="active" for="first_name">First Name</label>
+              <input id="first_name" type="text" class="validate" data-length="20"/>
+              <span class="helper-text" data-error="Please input within the character limit"/>
             </div>
             <div class="input-field col s6">
-            <input placeholder="Last Name" id="last_name" type="text" class="validate"/>
-            {/* <label for="last_name">Last Name</label> */}
+              <label class="active" for="last_name">Last Name</label>
+              <input id="last_name" type="text" class="validate" data-length="20"/>
+              <span class="helper-text" data-error="Please input within the character limit"/>
             </div>
         </div>
         )
