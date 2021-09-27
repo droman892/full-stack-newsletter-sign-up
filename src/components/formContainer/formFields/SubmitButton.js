@@ -8,8 +8,11 @@ export class SubmitButton extends Component {
   }
 
   render() {
+
+    const submitButtonLabel = this.props.submitButtonLabel;
+
     return (
-        <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+        <button class="btn waves-effect waves-light" type="submit" name="action">{submitButtonLabel}</button>
         )
     }
 }

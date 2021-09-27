@@ -8,11 +8,14 @@ export class Range extends Component {
   }
 
   render() {
+
+    const rangeLabel = this.props.rangeLabel;
+
     return (
         <div>
-          <label class="active" for="test5">What's your budget for a monthly mortgage payment?</label>
+          <p class="active" for="test5">{rangeLabel}</p>
           <p class="range-field">
-              <input type="range" id="test5" min="0" max="100" />
+            <input type="range" id="test5" min="0" max="100" />
           </p>
         </div>
         )

@@ -1,44 +1,22 @@
-import React, {Component} from 'react';
-import M from "materialize-css";
-import Header from  "./layout/Header";
-import Names from "./formFields/Names";
-import Phone from "./formFields/Phone";
-import Email from "./formFields/Email";
-import Calendar from "./formFields/Calendar";
-import Checkboxes from "./formFields/Checkboxes";
-import Range from "./formFields/Range";
-import Radios from "./formFields/Radios";
-import TextArea from "./formFields/TextArea";
-import SubmitButton from "./formFields/SubmitButton";
+import React, {Component} from "react";
+import Layout from "./layout/Layout";
+import Nav from  "./navFooter/Nav";
+import FormContainer from "./formContainer/FormContainer";
+import Footer from "./navFooter/Footer";
 
 //  use FormControlUnstyled for validation support
 // use FormGroup for checkbox and switch
 export class App extends Component {
 
-  componentDidMount() {
-    // Auto initialize all the things!
-    M.AutoInit();
-  }
-
   render() {
 
     return (
-      <div className="form">
-        <div class="row form-container">
-          <form class="col s12"> 
-            
-            <Header/>
-            <Names/>
-            <Phone/>
-            <Email/>
-            <Calendar/>
-            <Checkboxes/>
-            <Range/>
-            <Radios/>
-            <TextArea/>
-            <SubmitButton/>    
-          </form>
-        </div>
+      <div>
+        <Layout 
+          navigator={<Nav/>} 
+          formContainer={<FormContainer/>} 
+          footer={<Footer/>}
+        />
       </div>
     )
   }

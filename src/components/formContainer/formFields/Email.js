@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import M from "materialize-css";
 
 document.addEventListener("DOMContentLoaded", function () {
   const textNeedCount = document.querySelectorAll("#email");
@@ -8,15 +7,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 export class Email extends Component {
 
-  componentDidMount() {
-    M.AutoInit();
-  }
-
   render() {
+
+    const email = this.props.email;
+
     return (
         <div class="row">
             <div class="input-field col s12">
-              <label class="active" for="email">Email</label>
+              <label class="active" for="email">{email}</label>
               <input id="email" type="email" class="validate" data-length="50"/>
               <span class="helper-text" data-error="Please input a valid email"/>
             </div>

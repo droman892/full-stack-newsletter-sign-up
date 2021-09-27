@@ -13,15 +13,19 @@ export class Names extends Component {
   }
 
   render() {
+
+    const firstName = this.props.firstName;
+    const lastName = this.props.lastName;
+
     return (
         <div class="row">
             <div class="input-field col s6">
-              <label class="active" for="first_name">First Name</label>
+              <label class="active" for="first_name">{firstName}</label>
               <input id="first_name" type="text" class="validate" data-length="20"/>
               <span class="helper-text" data-error="Please input within the character limit"/>
             </div>
             <div class="input-field col s6">
-              <label class="active" for="last_name">Last Name</label>
+              <label class="active" for="last_name">{lastName}</label>
               <input id="last_name" type="text" class="validate" data-length="20"/>
               <span class="helper-text" data-error="Please input within the character limit"/>
             </div>
