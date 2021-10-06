@@ -3,7 +3,8 @@ import reducers from './reducers/index';
 
 const store = createStore(
     reducers,
-    {}
+    // below is code snippet to use Redux Dev Tools
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 )
 
 export default store;

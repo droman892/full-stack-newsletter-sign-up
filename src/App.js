@@ -12,20 +12,25 @@ import {actionCreators} from './state/index'
 // use FormGroup for checkbox and switch
 const App = () => {
 
-    const state = useSelector((state) => state);
+    const account = useSelector((state) => state.account);
     const dispatch = useDispatch();
 
     const {depositMoney, withdrawMoney} = bindActionCreators(actionCreators, dispatch);
 
-    console.log(state);
+    
 
     return (
       <div>
-        <Layout 
+        {/* <Layout 
           navigator={<Nav/>} 
           formContainer={<FormContainer/>} 
           footer={<Footer/>}
-        />
+        /> */}
+
+        <h1>{account}</h1>
+        <button onClick={() => depositMoney(1000)}>Deposit</button>
+        <button onClick={() => withdrawMoney(1000)}>Withdraw</button>
+
       </div>
     )
 }
