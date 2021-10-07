@@ -1,9 +1,7 @@
 const firstNameReducer = (state = '', action) => {
     switch (action.type) {
-        case 'firstNameInput':
-            return state + 9;
-        case 'lastNameInput':
-            return state + 8;
+        case 'firstName':
+            return action.payload;
         default:
             return state;
     }

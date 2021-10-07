@@ -15,3 +15,21 @@ export const withdrawMoney = (amount) => {
         })
     }
 }
+
+export const inputFirstName = (text) => {
+    return (dispatch) => {
+        dispatch({
+            type: 'firstName',
+            payload: text
+        })
+    }
+}
+
+export const inputLastName = (text) => {
+    return (dispatch) => {
+        dispatch({
+            type: 'lastName',
+            payload: text
+        })
+    }
+}

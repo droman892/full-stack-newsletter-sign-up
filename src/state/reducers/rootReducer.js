@@ -1,9 +1,11 @@
 import { combineReducers } from 'redux';
-import nameReducer from './nameReducer';
+import firstNameReducer from './firstNameReducer';
+import lastNameReducer from './lastNameReducer';
 import accountReducer from './accountReducer';
 
 const reducers = combineReducers({
-    name: nameReducer,
+    firstName: firstNameReducer,
+    lastName: lastNameReducer,
     account: accountReducer
 });
 
