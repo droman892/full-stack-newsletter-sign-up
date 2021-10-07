@@ -1,6 +1,5 @@
 import { combineReducers } from 'redux';
 import nameReducer from './nameReducer';
-
 import accountReducer from './accountReducer';
 
 const reducers = combineReducers({

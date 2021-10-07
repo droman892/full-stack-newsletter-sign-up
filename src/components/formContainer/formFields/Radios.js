@@ -1,44 +1,35 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-export class Radios extends Component {
-
-  render() {
-
-    const radioLabel = this.props.radioLabel;
-    const radio1 = this.props.radio1;
-    const radio2 = this.props.radio2;
-    const radio3 = this.props.radio3;
-    const radio4 = this.props.radio4;
+const Radios = () => {
 
     return (
         <div>
-            <p class="active" >{radioLabel}</p>
+            <p class="active" >Within what range do you want to make your down-payment?</p>
             <p>
               <label>
                 <input class="with-gap" name="group1" type="radio"  />
-                <span>{radio1}</span>
+                <span>0% - 10%</span>
               </label>
             </p>
             <p>
               <label>
                 <input class="with-gap" name="group1" type="radio"  />
-                <span>{radio2}</span>
+                <span>10% - 20%</span>
               </label>
             </p>
             <p>
               <label>
                 <input class="with-gap" name="group1" type="radio"  />
-                <span>{radio3}</span>
+                <span>20% - 50%</span>
               </label>
             </p>
             <p>
               <label>
                 <input class="with-gap" name="group1" type="radio"  />
-                <span>{radio4}</span>
+                <span>+50%</span>
               </label>
             </p>
         </div>
         )
-    }
 }
 export default Radios;

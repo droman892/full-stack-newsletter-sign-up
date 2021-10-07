@@ -1,22 +1,12 @@
-import React, {Component} from 'react';
-import M from "materialize-css";
+import React from 'react';
 
-export class Calendar extends Component {
-
-  componentDidMount() {
-    M.AutoInit();
-  }
-
-  render() {
-
-    const calendar = this.props.calendar;
+const Calendar = () => {
 
     return (
         <div>
-          <label class="active" for="calendar">{calendar}</label>
+          <label class="active" for="calendar">Choose a Date</label>
           <input id="calendar" type="text" class="datepicker"/>
         </div>
         )
-    }
 }
 export default Calendar;

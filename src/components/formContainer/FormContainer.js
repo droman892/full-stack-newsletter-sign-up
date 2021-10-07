@@ -10,14 +10,7 @@ import Radios from "./formFields/Radios";
 import TextArea from "./formFields/TextArea";
 import SubmitButton from "./formFields/SubmitButton";
 
-export class FormContainer extends Component {
-
-  componentDidMount() {
-    // Auto initialize all the things!
-    M.AutoInit();
-  }
-
-  render() {
+const FormContainer = () => {
 
     return (
       <div className="form">
@@ -69,7 +62,6 @@ export class FormContainer extends Component {
         </div>
       </div>
     )
-  }
 }
 
 export default FormContainer;

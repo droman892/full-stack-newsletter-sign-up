@@ -1,19 +1,9 @@
-import React, {Component} from 'react';
-import M from "materialize-css";
+import React from 'react';
 
-export class SubmitButton extends Component {
-
-  componentDidMount() {
-    M.AutoInit();
-  }
-
-  render() {
-
-    const submitButtonLabel = this.props.submitButtonLabel;
+const SubmitButton = () => {
 
     return (
-        <button class="btn waves-effect waves-light" type="submit" name="action">{submitButtonLabel}</button>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
         )
-    }
 }
 export default SubmitButton;

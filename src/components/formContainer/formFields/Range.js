@@ -1,24 +1,14 @@
-import React, {Component} from 'react';
-import M from "materialize-css";
+import React from 'react';
 
-export class Range extends Component {
-
-  componentDidMount() {
-    M.AutoInit();
-  }
-
-  render() {
-
-    const rangeLabel = this.props.rangeLabel;
+const Range = () => {
 
     return (
         <div>
-          <p class="active" for="test5">{rangeLabel}</p>
+          <p class="active" for="test5">What's your budget for a monthly mortgage payment?</p>
           <p class="range-field">
             <input type="range" id="test5" min="0" max="100" />
           </p>
         </div>
         )
-    }
 }
 export default Range;
