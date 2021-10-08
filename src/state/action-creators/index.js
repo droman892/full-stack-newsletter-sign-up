@@ -1,3 +1,5 @@
+import checkbox1Reducer from "../reducers/checkbox1Reducer"
+
 export const depositMoney = (amount) => {
     return (dispatch) => {
         dispatch({
@@ -56,7 +58,7 @@ export const markCheckbox1 = (check) => {
     return (dispatch) => {
         dispatch({
             type: 'check1',
-            payload: 'Buy and Hold'
+            payload: check
         })
     }
 }
@@ -65,7 +67,7 @@ export const markCheckbox2 = (check) => {
     return (dispatch) => {
         dispatch({
             type: 'check2',
-            payload: 'Fix and Flip'
+            payload: check
         })
     }
 }
@@ -74,7 +76,7 @@ export const markCheckbox3 = (check) => {
     return (dispatch) => {
         dispatch({
             type: 'check3',
-            payload: 'Wholesaling'
+            payload: check
         })
     }
 }
@@ -83,7 +85,7 @@ export const markCheckbox4 = (check) => {
     return (dispatch) => {
         dispatch({
             type: 'check4',
-            payload: 'BRRR'
+            payload: check
         })
     }
 }
@@ -92,7 +94,7 @@ export const markCheckbox5 = (check) => {
     return (dispatch) => {
         dispatch({
             type: 'check5',
-            payload: 'Long-term Rentals'
+            payload: check
         })
     }
 }

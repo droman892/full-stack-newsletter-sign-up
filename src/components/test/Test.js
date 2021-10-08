@@ -10,6 +10,8 @@ const Test = () => {
     const dispatch = useDispatch();
     const {depositMoney, withdrawMoney} = bindActionCreators(actionCreators, dispatch);
 
+    console.log('TEST: ' + account)
+
     return (
       <div>
         <h1>{account}</h1>

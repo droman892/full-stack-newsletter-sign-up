@@ -4,25 +4,25 @@ import Nav from  './components/navFooter/Nav';
 import FormContainer from './components/formContainer/FormContainer';
 import Footer from './components/navFooter/Footer';
 
-// import {useSelector, useDispatch} from 'react-redux';
-// import {bindActionCreators} from 'redux';
-// import {actionCreators} from './state/index'
+import {useSelector, useDispatch} from 'react-redux';
+import {bindActionCreators} from 'redux';
+import {actionCreators} from './state/index'
 
 //  use FormControlUnstyled for validation support
 // use FormGroup for checkbox and switch
 const App = () => {
 
-    // const account = useSelector((state) => state.account);
-    // const dispatch = useDispatch();
+    const account = useSelector((state) => state.account);
+    const dispatch = useDispatch();
 
-    // const {depositMoney, withdrawMoney} = bindActionCreators(actionCreators, dispatch);
+    const {depositMoney, withdrawMoney} = bindActionCreators(actionCreators, dispatch);
 
     return (
       <div>
         <Nav/>
         <FormContainer/>
         <Footer/>
-        {/* <Test/> */}
+        <Test/>
 
 
 
