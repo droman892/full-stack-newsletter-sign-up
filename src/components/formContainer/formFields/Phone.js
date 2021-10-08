@@ -7,11 +7,11 @@ import {actionCreators} from '../../../state/index';
 
 const Phone = ()  => {
 
-    const phone = useSelector((state) => state.phone);
+    const phoneNum = useSelector((state) => state.phoneNum);
     const dispatch = useDispatch();
     const { inputPhoneNum } = bindActionCreators(actionCreators, dispatch);
 
-    // console.log(phone)
+    console.log('Phone: ' + phoneNum)
 
     return (
         <div class="row">

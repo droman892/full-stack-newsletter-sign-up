@@ -6,11 +6,11 @@ import {actionCreators} from '../../../state/index'
 
 const Checkboxes = () => {
 
-    const checkboxes = useSelector((state) => state.checkboxes);
+    const checkboxesMarked = useSelector((state) => state.checkboxesMarked);
     const dispatch = useDispatch();
-    const { markCheckboxes } = bindActionCreators(actionCreators, dispatch);
+    const { markCheckbox1, markCheckbox2, markCheckbox3, markCheckbox4, markCheckbox5 } = bindActionCreators(actionCreators, dispatch);
 
-    // console.log(checkboxes)
+    console.log('Checkboxes Marked: ' + checkboxesMarked)
 
     return (
         <div>
@@ -19,7 +19,7 @@ const Checkboxes = () => {
                 <label>
                 <input 
                     type="checkbox" 
-                    onChange={(e) => markCheckboxes(e.target.checked)}
+                    onChange={(e) => markCheckbox1(e.target.checked)}
                 />
                 <span>Buy and Hold</span>
                 </label>
@@ -28,7 +28,7 @@ const Checkboxes = () => {
                 <label>
                 <input 
                     type="checkbox" 
-                    onChange={(e) => markCheckboxes(e.target.checked)}
+                    onChange={(e) => markCheckbox2(e.target.checked)}
                 />
                 <span>Fix and Flip</span>
                 </label>
@@ -37,7 +37,7 @@ const Checkboxes = () => {
                 <label>
                 <input 
                     type="checkbox" 
-                    onChange={(e) => markCheckboxes(e.target.checked)}
+                    onChange={(e) => markCheckbox3(e.target.checked)}
                 />
                 <span>Wholesaling</span>
                 </label>
@@ -46,7 +46,7 @@ const Checkboxes = () => {
                 <label>
                 <input 
                     type="checkbox" 
-                    onChange={(e) => markCheckboxes(e.target.checked)}
+                    onChange={(e) => markCheckbox4(e.target.checked)}
                 />
                 <span>BRRR</span>
                 </label>
@@ -55,7 +55,7 @@ const Checkboxes = () => {
                 <label>
                 <input 
                     type="checkbox" 
-                    onChange={(e) => markCheckboxes(e.target.checked)}
+                    onChange={(e) => markCheckbox5(e.target.checked)}
                 />
                 <span>Long-term Rentals</span>
                 </label>

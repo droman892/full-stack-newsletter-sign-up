@@ -17,7 +17,7 @@ const reducers = combineReducers({
     phoneNum: phoneReducer,
     email: emailReducer,
     checkboxesMarked: checkboxReducer,
-    radiosMarked: radioReducer,
+    radioMarked: radioReducer,
     comments: textAreaReducer
 
 

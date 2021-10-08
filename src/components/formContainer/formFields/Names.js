@@ -11,11 +11,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const Names = () => {
 
-    const name = useSelector((state) => state.name);
+    const firstName = useSelector((state) => state.firstName);
+    const lastName = useSelector((state) => state.lastName);
     const dispatch = useDispatch();
     const {inputFirstName, inputLastName} = bindActionCreators(actionCreators, dispatch);
 
-    // console.log(name)
+    console.log('First Name: ' + firstName)
+    console.log('Last Name: ' + lastName)
 
     return (
         <div class="row">

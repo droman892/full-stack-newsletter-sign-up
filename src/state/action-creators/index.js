@@ -52,11 +52,83 @@ export const inputEmail = (email) => {
     }
 }
 
-export const markCheckboxes = (checks) => {
+export const markCheckbox1 = (check) => {
     return (dispatch) => {
         dispatch({
-            type: 'checked',
-            payload: checks
+            type: 'check1',
+            payload: 'Buy and Hold'
+        })
+    }
+}
+
+export const markCheckbox2 = (check) => {
+    return (dispatch) => {
+        dispatch({
+            type: 'check2',
+            payload: 'Fix and Flip'
+        })
+    }
+}
+
+export const markCheckbox3 = (check) => {
+    return (dispatch) => {
+        dispatch({
+            type: 'check3',
+            payload: 'Wholesaling'
+        })
+    }
+}
+
+export const markCheckbox4 = (check) => {
+    return (dispatch) => {
+        dispatch({
+            type: 'check4',
+            payload: 'BRRR'
+        })
+    }
+}
+
+export const markCheckbox5 = (check) => {
+    return (dispatch) => {
+        dispatch({
+            type: 'check5',
+            payload: 'Long-term Rentals'
+        })
+    }
+}
+
+export const radio1Selected = (radio) => {
+    return (dispatch) => {
+        dispatch({
+            type: 'radio1Selected',
+            payload: '0% - 10%'
+        })
+    }
+}
+
+export const radio2Selected = (radio) => {
+    return (dispatch) => {
+        dispatch({
+            type: 'radio2Selected',
+            payload: '10% - 20%'
+        })
+    }
+}
+
+export const radio3Selected = (radio) => {
+    return (dispatch) => {
+        dispatch({
+            type: 'radio3Selected',
+            payload: '20% - 50%'
+        })
+    }
+}
+
+export const radio4Selected = (radio) => {
+    return (dispatch) => {
+        dispatch({
+            type: 'radio4Selected',
+            payload: '+50%'
         })
     }
 }
@@ -66,15 +138,6 @@ export const inputTextArea = (text) => {
         dispatch({
             type: 'textArea',
             payload: text
-        })
-    }
-}
-
-export const radioSelected = (radio) => {
-    return (dispatch) => {
-        dispatch({
-            type: 'radioSelected',
-            payload: radio
         })
     }
 }

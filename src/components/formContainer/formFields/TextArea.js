@@ -11,11 +11,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const TextArea = () => {
 
-    const textArea = useSelector((state) => state.textArea);
+    const comments = useSelector((state) => state.comments);
     const dispatch = useDispatch();
     const { inputTextArea } = bindActionCreators(actionCreators, dispatch);
 
-    // console.log(textArea)
+    console.log('Comments: ' + comments)
 
     return (
         <div class="row">
