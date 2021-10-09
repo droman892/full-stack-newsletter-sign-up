@@ -15,7 +15,7 @@ const Email = () => {
     const dispatch = useDispatch();
     const { inputEmail } = bindActionCreators(actionCreators, dispatch);
 
-    console.log('Email: ' + email)
+    // console.log('Email: ' + email)
 
     return (
         <div class="row">

@@ -11,7 +11,7 @@ const Phone = ()  => {
     const dispatch = useDispatch();
     const { inputPhoneNum } = bindActionCreators(actionCreators, dispatch);
 
-    console.log('Phone: ' + phoneNum)
+    // console.log('Phone: ' + phoneNum)
 
     return (
         <div class="row">

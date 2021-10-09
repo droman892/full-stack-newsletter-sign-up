@@ -15,7 +15,7 @@ const TextArea = () => {
     const dispatch = useDispatch();
     const { inputTextArea } = bindActionCreators(actionCreators, dispatch);
 
-    console.log('Comments: ' + comments)
+    // console.log('Comments: ' + comments)
 
     return (
         <div class="row">

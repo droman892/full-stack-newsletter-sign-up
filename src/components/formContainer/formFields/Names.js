@@ -16,8 +16,8 @@ const Names = () => {
     const dispatch = useDispatch();
     const {inputFirstName, inputLastName} = bindActionCreators(actionCreators, dispatch);
 
-    console.log('First Name: ' + firstName)
-    console.log('Last Name: ' + lastName)
+    // console.log('First Name: ' + firstName)
+    // console.log('Last Name: ' + lastName)
 
     return (
         <div class="row">

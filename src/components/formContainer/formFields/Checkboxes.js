@@ -14,11 +14,11 @@ const Checkboxes = () => {
     const dispatch = useDispatch();
     const { markCheckbox1, markCheckbox2, markCheckbox3, markCheckbox4, markCheckbox5 } = bindActionCreators(actionCreators, dispatch);
     
-    console.log('Checkbox 1: ' + checkbox1);
-    console.log('Checkbox 2: ' + checkbox2);
-    console.log('Checkbox 3: ' + checkbox3);
-    console.log('Checkbox 4: ' + checkbox4);
-    console.log('Checkbox 5: ' + checkbox5);
+    // console.log('Checkbox 1: ' + checkbox1);
+    // console.log('Checkbox 2: ' + checkbox2);
+    // console.log('Checkbox 3: ' + checkbox3);
+    // console.log('Checkbox 4: ' + checkbox4);
+    // console.log('Checkbox 5: ' + checkbox5);
 
     const getCheckBox1 = () => {
         if (checkbox1 !== 'Buy and Hold') {

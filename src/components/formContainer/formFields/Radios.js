@@ -10,7 +10,7 @@ const Radios = () => {
     const dispatch = useDispatch();
     const { radio1Selected, radio2Selected, radio3Selected, radio4Selected } = bindActionCreators(actionCreators, dispatch);
 
-    console.log('Radio Marked: ' + radioMarked)
+    // console.log('Radio Marked: ' + radioMarked)
 
     return (
         <div>
