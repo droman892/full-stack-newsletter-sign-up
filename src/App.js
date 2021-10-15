@@ -8,11 +8,15 @@ import {
   Route
 } from "react-router-dom";
 
+import TestExpress from './components/test/TestExpress';
+
 // import Test from './components/test/Test';
 
 //  use FormControlUnstyled for validation support
 // use FormGroup for checkbox and switch
 const App = () => {
+
+
 
     return (
       <BrowserRouter>
@@ -21,7 +25,8 @@ const App = () => {
           <Nav/>
           <FormContainer/>
           <Footer/>
-
+          <TestExpress/>
+          
           {/* Displays the state of all of the newsletter components */}
           <StoreDisplay/>
 
