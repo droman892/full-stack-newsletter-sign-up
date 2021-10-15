@@ -4,11 +4,17 @@ const cookieParser = require('cookie-parser');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use('/static', express.static('public'));
+// app.use(bodyParser.urlencoded({ extended: false }));
+// app.use(cookieParser());
+// app.use('/static', express.static('public'));
 
+// this page-route is to display backend data
 app.use('./test/', require('./routes/testRoute'));
+
+
+// app.get('/', function(req, res) {
+//     res.send('Express is here to stay!');
+// })
 
 
 // const mainRoutes = require('./routes');
