@@ -8,7 +8,6 @@ import {
   Route
 } from "react-router-dom";
 
-import TestExpress from './components/test/TestExpress';
 
 // import Test from './components/test/Test';
 
@@ -25,7 +24,7 @@ const App = () => {
           <Nav/>
           <FormContainer/>
           <Footer/>
-          <TestExpress/>
+
           
           {/* Displays the state of all of the newsletter components */}
           <StoreDisplay/>

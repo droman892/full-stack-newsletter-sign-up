@@ -4,12 +4,17 @@ const cookieParser = require('cookie-parser');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+
+
+
+
+
 // app.use(bodyParser.urlencoded({ extended: false }));
 // app.use(cookieParser());
 // app.use('/static', express.static('public'));
 
 // this page-route is to display backend data
-app.use('./test/', require('./routes/testRoute'));
+
 
 
 // app.get('/', function(req, res) {
@@ -23,6 +28,9 @@ app.use('./test/', require('./routes/testRoute'));
 // app.use(mainRoutes);
 // app.use('/specificRoutes', specificRoutes);
 
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+  })
 
 //this middleware creates the error object and hands it off to the error handler
 // app.use((req, res, next) => {
