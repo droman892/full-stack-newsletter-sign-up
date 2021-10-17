@@ -3,8 +3,8 @@ const router = express.Router();
 const app = express();
 
 
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-  })
+router.get('/', function(req,res) {
+    res.sendFile('public/index.html');
+  });
 
 module.exports = router;
