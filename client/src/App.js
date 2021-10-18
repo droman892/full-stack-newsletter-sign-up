@@ -8,30 +8,21 @@ import {
   Route
 } from "react-router-dom";
 
-
 // import Test from './components/test/Test';
 
 //  use FormControlUnstyled for validation support
 // use FormGroup for checkbox and switch
 const App = () => {
-
-
-
     return (
       <BrowserRouter>
         <div>
-
           <Nav/>
           <FormContainer/>
           <Footer/>
-
-          
           {/* Displays the state of all of the newsletter components */}
           <StoreDisplay/>
-
           {/* The Test component is for visualizing Redux state management
           <Test/> */}
-
         </div>
       </BrowserRouter>
     )
