@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 const Footer = () => {
 
     return (
-        <footer class="page-footer">
+        <footer class="page-footer sticky">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
@@ -12,7 +12,7 @@ const Footer = () => {
                 <p class="grey-text text-lighten-4">Driven by purpose to empower families.  Curious about technology innovation for all.  Relentless with great customer experiences.</p>
               </div>
               <div class="col l4 offset-l2 s12">
-                {/* <h5 class="white-text"></h5> */}
+                {/* <h5 class="white-text">Possible Header</h5> */}
                 <ul>
                   <li>
                     <Link to='/' class='grey-text text-lighten-3'>Home</Link>
@@ -36,7 +36,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div class='footer-copyright'>
+          <div class='footer-copyright pad'>
             <div class='container'>
             © 2021 REI-DR Enterprises, Inc. All Rights Reserved.
             <Link to='/privacy' class='grey-text text-lighten-4'>Privacy Statement</Link>

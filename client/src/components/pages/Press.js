@@ -7,7 +7,7 @@ const Press = () => {
         <div>
           <Nav/>
           <div  className='message'>
-            <h1>You've been routed to the Press page.  Thanks for stopping by!</h1>
+            <h5>You've been routed to the Press page.  Thanks for stopping by!</h5>
           </div>
           <Footer/>
         </div>

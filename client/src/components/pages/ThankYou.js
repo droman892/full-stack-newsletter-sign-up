@@ -11,7 +11,7 @@ const ThankYou = () => {
         <div>
             <Nav/>
                 <div className='message'>
-                    <h2>Thanks for submitting your info, {firstName}!</h2>
+                    <h5>Thanks for submitting your info, {firstName}!</h5>
                     <p>One of our agents will get back with you shortly.</p>
                 </div>
             <Footer/>

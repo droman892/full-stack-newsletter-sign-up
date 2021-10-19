@@ -6,9 +6,9 @@ const Careers = () => {
     return (
         <div>
           <Nav/>
-          <div  className='message'>
-            <h1>You've been routed to the Careers page.  Thanks for stopping by!</h1>
-          </div>
+          <main  className='message'>
+            <h5>You've been routed to the Careers page.  Thanks for stopping by!</h5>
+          </main>
           <Footer/>
         </div>
     )

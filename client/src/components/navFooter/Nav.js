@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 const Nav = () => {
 
     return (
-        <div>
+        <header>
             <nav>
                 <div class="nav-wrapper">
                     <Link to='/' class="brand-logo">REI-DR Enterprises</Link>
@@ -52,7 +52,7 @@ const Nav = () => {
                     <Link to='/contact'>Contact</Link>
                 </li>
             </ul>
-        </div>
+        </header>
     )
 }
 
