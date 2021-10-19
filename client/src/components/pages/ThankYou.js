@@ -10,7 +10,7 @@ const ThankYou = () => {
     return (
         <div>
             <Nav/>
-                <div>
+                <div className='message'>
                     <h2>Thanks for submitting your info, {firstName}!</h2>
                     <p>One of our agents will get back with you shortly.</p>
                 </div>

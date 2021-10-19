@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 const Footer = () => {
 
@@ -13,23 +14,36 @@ const Footer = () => {
               <div class="col l4 offset-l2 s12">
                 {/* <h5 class="white-text"></h5> */}
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">About</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Solutions</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Press</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Careers</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
+                  <li>
+                    <Link to='/' class='grey-text text-lighten-3'>Home</Link>
+                  </li>
+                  <li>
+                    <Link to='/about' class='grey-text text-lighten-3'>About</Link>
+                  </li>
+                  <li>
+                      <Link to='/solutions' class='grey-text text-lighten-3'>Solutions</Link>
+                  </li>
+                  <li>
+                      <Link to='/press' class='grey-text text-lighten-3'>Press</Link>
+                  </li>
+                  <li>
+                      <Link to='/careers' class='grey-text text-lighten-3'>Careers</Link>
+                  </li>
+                  <li>
+                      <Link to='/contact' class='grey-text text-lighten-3'>Contact</Link>
+                  </li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="footer-copyright">
-            <div class="container">
+          <div class='footer-copyright'>
+            <div class='container'>
             © 2021 REI-DR Enterprises, Inc. All Rights Reserved.
-            <a class="grey-text text-lighten-4 right" href="#!">Privacy Statement</a>
+            <Link to='/privacy' class='grey-text text-lighten-4'>Privacy Statement</Link>
             </div>
           </div>
         </footer>
-        )
+    )
 }
 
 export default Footer;

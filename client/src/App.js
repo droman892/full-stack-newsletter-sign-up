@@ -4,6 +4,7 @@ import About from './components/pages/About';
 import Careers from './components/pages/Careers';
 import Contact from './components/pages/Contact';
 import Press from './components/pages/Press';
+import Privacy from './components/pages/Privacy';
 import Solutions from './components/pages/Solutions';
 import ThankYou from './components/pages/ThankYou';
 import StoreDisplay from './state/StoreDisplay';
@@ -25,6 +26,7 @@ const App = () => {
             <Route path='/careers' component={Careers}/>
             <Route path='/contact' component={Contact}/>
             <Route path='/press' component={Press}/>
+            <Route path='/privacy' component={Privacy}/>
             <Route path='/solutions' component={Solutions}/>
             <Route path='/thank-you' component={ThankYou}/>
           </Switch>
