@@ -4,17 +4,15 @@ import FormContainer from './components/formContainer/FormContainer';
 import Footer from './components/navFooter/Footer';
 import StoreDisplay from './state/StoreDisplay';
 import {
-  BrowserRouter,
+  BrowserRouter as Router,
   Route
 } from "react-router-dom";
-
-// import Test from './components/test/Test';
 
 //  use FormControlUnstyled for validation support
 // use FormGroup for checkbox and switch
 const App = () => {
     return (
-      <BrowserRouter>
+      <Router>
         <div>
           <Nav/>
           <FormContainer/>
@@ -24,7 +22,7 @@ const App = () => {
           {/* The Test component is for visualizing Redux state management
           <Test/> */}
         </div>
-      </BrowserRouter>
+      </Router>
     )
 }
 

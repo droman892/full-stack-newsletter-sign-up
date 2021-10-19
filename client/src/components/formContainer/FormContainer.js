@@ -13,13 +13,17 @@ import SubmitButton from "./formFields/SubmitButton";
 
 const FormContainer = () => {
 
+    const manageSubmit = (e) => {
+      e.preventDefault();
+    }
+    
     return (
       <div className="form">
         <div class="row form-container"> 
           <div className="form-header">
             <h5>Newsletter Sign-up</h5>
           </div>
-          <form class="col s12"> 
+          <form class="col s12" onSubmit={manageSubmit}> 
             <Names
               firstName={"First Name"}
               lastName={"Last Name"}
