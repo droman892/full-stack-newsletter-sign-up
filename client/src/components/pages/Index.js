@@ -1,9 +1,9 @@
 import React from 'react';
-import Nav from  '../navFooter/Nav';
+import Nav from  '../layout/Nav';
 import FormContainer from '../formContainer/FormContainer';
-import Footer from '../navFooter/Footer';
+import Footer from '../layout/Footer';
 
-const Home = () => {
+const Index = () => {
     return (
         <div>
           <Nav/>
@@ -13,4 +13,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default Index;

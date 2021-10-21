@@ -1,6 +1,6 @@
 import React from 'react';
-import Nav from  '../navFooter/Nav';
-import Footer from '../navFooter/Footer';
+import Nav from  '../layout/Nav';
+import Footer from '../layout/Footer';
 
 const Careers = () => {
     return (

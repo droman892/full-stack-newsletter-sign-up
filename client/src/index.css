@@ -35,24 +35,28 @@ code {
   margin-right: auto;
   width: 70%;
   text-align: center;
-
-  min-height: 100%;
+  min-height: 95vh;
   
 }
 
 
 
-/* footer {
+footer {
   margin-top: auto;
 }
 
 main {
   min-height: 100%;
-} */
+}
 
 
 
 
 .pad {
   padding: 15px 0px;
+}
+
+.sticky {
+  display: flex;
+  flex-direction: column;
 }

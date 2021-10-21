@@ -1,8 +1,9 @@
 import React from 'react';
-import Home from './components/pages/Home';
+import Index from './components/pages/Index';
 import About from './components/pages/About';
 import Careers from './components/pages/Careers';
 import Contact from './components/pages/Contact';
+import Error from './components/pages/Error';
 import Press from './components/pages/Press';
 import Privacy from './components/pages/Privacy';
 import Solutions from './components/pages/Solutions';
@@ -21,10 +22,11 @@ const App = () => {
       <Router>
         <div>
           <Switch>
-            <Route path='/' exact component={Home}/>
+            <Route path='/' exact component={Index}/>
             <Route path='/about' component={About}/>
             <Route path='/careers' component={Careers}/>
             <Route path='/contact' component={Contact}/>
+            <Route path='/error' component={Error}/>
             <Route path='/press' component={Press}/>
             <Route path='/privacy' component={Privacy}/>
             <Route path='/solutions' component={Solutions}/>

@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 const Footer = () => {
 
     return (
-        <footer class="page-footer sticky">
+        <div class="page-footer sticky purple darken-4">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
@@ -42,7 +42,7 @@ const Footer = () => {
             <Link to='/privacy' class='grey-text text-lighten-4'>Privacy Statement</Link>
             </div>
           </div>
-        </footer>
+        </div>
     )
 }
 
