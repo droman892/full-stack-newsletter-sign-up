@@ -3,14 +3,15 @@ const app = express();
 const path = require('path');
 const PORT = process.env.PORT || 5000;
 
-const indexRouter = require('./client/routes/indexRoute');
-const aboutRouter = require('./client/routes/aboutRoute');
-const careersRouter = require('./client/routes/careersRoute');
-const contactRouter = require('./client/routes/contactRoute');
-const pressRouter = require('./client/routes/pressRoute');
-const privacyRouter = require('./client/routes/privacyRoute');
-const solutionsRouter = require('./client/routes/solutionsRoute');
-const thankYouRouter = require('./client/routes/thankYouRoute');
+// const mainRoutes = require('./client/routes');
+// const indexRouter = require('./client/routes/indexRoute');
+// const aboutRouter = require('./client/routes/aboutRoute');
+// const careersRouter = require('./client/routes/careersRoute');
+// const contactRouter = require('./client/routes/contactRoute');
+// const pressRouter = require('./client/routes/pressRoute');
+// const privacyRouter = require('./client/routes/privacyRoute');
+// const solutionsRouter = require('./client/routes/solutionsRoute');
+// const thankYouRouter = require('./client/routes/thankYouRoute');
 
 // tells express where to serve static files from
 app.use(express.static(path.join(__dirname, 'client/build')));
@@ -21,6 +22,7 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 // });
 
 // For future functionality
+// app.use(mainRoutes);
 // app.use('/about', aboutRouter);
 // app.use('/careers', careersRouter);
 // app.use('/contact', contactRouter);
@@ -47,6 +49,7 @@ app.get('/contact', function(req, res) {
 
 app.get('/press', function(req, res) {
   console.log('You have reached the Press route!');
+  console.dir(req);
   res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
 
@@ -73,6 +76,7 @@ app.get('/', function(req, res) {
 app.get('/*', function(req, res) {
   console.log('You have reached the Error route!');
   res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+  // res.send('<h1>Sorry, but the page you requested does not exist.</h1>');
 });
 
 app.listen(PORT, () => console.log(`The application is being served on localhost:${PORT}`));
