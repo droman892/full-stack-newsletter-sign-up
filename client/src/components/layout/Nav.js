@@ -17,12 +17,12 @@ const Nav = () => {
             <nav>
                 <div class="nav-wrapper purple darken-4">
                     <div className='container'>
-                        <Link to='/' class="brand-logo">DR Enterprises</Link>
+                        <Link to='/home' class="brand-logo">DR Enterprises</Link>
                         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                         
                         <ul class="right hide-on-med-and-down">
                             <li>
-                                <Link to='/'>Home</Link>
+                                <Link to='/home'>Home</Link>
                             </li>
                             <li>
                                 <Link to='/about'>About</Link>
@@ -46,7 +46,7 @@ const Nav = () => {
 
             <ul class="sidenav" id="mobile-demo">
                 <li>
-                    <Link to='/'>Home</Link>
+                    <Link to='/home'>Home</Link>
                 </li>
                 <li>
                     <Link to='/about'>About</Link>

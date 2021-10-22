@@ -25,9 +25,13 @@ const Names = () => {
               <input 
                 id="first_name" 
                 type="text" 
+                name ='first_name'
                 class="validate" 
+                minLength='1'
+                maxLength='20'
                 data-length="20"
                 onChange={(e) => inputFirstName(e.target.value)}
+                required
               />
               <span class="helper-text" data-error="Please input within the character limit"/>
             </div>
@@ -36,9 +40,13 @@ const Names = () => {
               <input 
                 id="last_name" 
                 type="text" 
-                class="validate" 
+                name='last_name'
+                class="validate"
+                minLength='1'
+                maxLength='20'
                 data-length="20"
                 onChange={(e) => inputLastName(e.target.value)}
+                required
               />
               <span class="helper-text" data-error="Please input within the character limit"/>
             </div>

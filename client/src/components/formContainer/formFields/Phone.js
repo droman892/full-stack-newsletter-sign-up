@@ -16,13 +16,16 @@ const Phone = ()  => {
     return (
         <div class="row">
             <div class="input-field col s12">
-              <label class="active" for="phone">Phone #</label>
+              <label class="active" for="tel">Phone #</label>
               <input 
-                id="phone" 
-                type="text" 
+                id="tel" 
+                type="tel" 
+                name='tel'
                 class="validate" 
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                maxLength='10' 
+                pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
                 onChange={(e) => inputPhoneNum(e.target.value)}
+                required
               />
               <span class="helper-text" data-error="Please use the proper format: XXX-XXX-XXXX"/>
             </div>

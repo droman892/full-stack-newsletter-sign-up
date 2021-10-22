@@ -24,7 +24,10 @@ const TextArea = () => {
             <textarea 
               id="comments" 
               class="materialize-textarea" 
+              maxLength='200'
               data-length="200"
+              spellCheck= 'true'
+              pattern='[A-Za-z0-9_]'
               onChange={(e) => inputTextArea(e.target.value)}
             />      
           </div>

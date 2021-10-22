@@ -23,7 +23,7 @@ const FormContainer = () => {
           <div className="form-header">
             <h5>Newsletter Sign-up</h5>
           </div>
-          <form class="col s12" onSubmit={manageSubmit}> 
+          <form class="col s12" onSubmit={manageSubmit} action='/home' method='POST'> 
             <Names
               firstName={"First Name"}
               lastName={"Last Name"}

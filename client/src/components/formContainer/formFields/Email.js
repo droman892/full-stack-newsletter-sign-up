@@ -25,6 +25,7 @@ const Email = () => {
                 id="email" 
                 type="email" 
                 class="validate" 
+                maxLength='50'
                 data-length="50"
                 onChange={(e) => inputEmail(e.target.value)}
               />

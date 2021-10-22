@@ -15,7 +15,7 @@ const Footer = () => {
                 {/* <h5 class="white-text">Possible Header</h5> */}
                 <ul>
                   <li>
-                    <Link to='/' class='grey-text text-lighten-3'>Home</Link>
+                    <Link to='/home' class='grey-text text-lighten-3'>Home</Link>
                   </li>
                   <li>
                     <Link to='/about' class='grey-text text-lighten-3'>About</Link>

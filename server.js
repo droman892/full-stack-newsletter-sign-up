@@ -1,7 +1,11 @@
 const express = require('express');
+// need body parser to read req.body
+const bodyParser = require('body-parser');
 const app = express();
 const path = require('path');
 const PORT = process.env.PORT || 5000;
+
+app.use(bodyParser.urlencoded({extended: false}));
 
 // const mainRoutes = require('./client/routes');
 // const indexRouter = require('./client/routes/indexRoute');
@@ -12,6 +16,8 @@ const PORT = process.env.PORT || 5000;
 // const privacyRouter = require('./client/routes/privacyRoute');
 // const solutionsRouter = require('./client/routes/solutionsRoute');
 // const thankYouRouter = require('./client/routes/thankYouRoute');
+
+
 
 // tells express where to serve static files from
 app.use(express.static(path.join(__dirname, 'client/build')));
@@ -32,48 +38,64 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 // app.use('/thank-you', thankYouRouter);
 // app.use('/', indexRouter);
 
-app.get('/about', function(req, res) {
+app.get('/about', (req, res) => {
   console.log('You have reached the About route!');
   res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
 
-app.get('/careers', function(req, res) {
+app.get('/careers', (req, res) => {
   console.log('You have reached the Careers route!');
   res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
 
-app.get('/contact', function(req, res) {
+app.get('/contact', (req, res) => {
   console.log('You have reached the Contact route!');
   res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
 
-app.get('/press', function(req, res) {
-  console.log('You have reached the Press route!');
-  console.dir(req);
+
+
+
+
+app.get('/home', (req, res) => {
+  console.log('You have reached the Home route!');
+  console.dir(req.body);
   res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
 
-app.get('/privacy', function(req, res) {
+app.post('/home', (req, res) => {
+  // console.log('You have reached the Home route!');
+  console.dir(req.body);
+  res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+});
+
+app.get('/press', (req, res) => {
+  console.log('You have reached the Press route!');
+  res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+});
+
+app.get('/privacy', (req, res) => {
   console.log('You have reached the Privacy route!');
   res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
 
-app.get('/solutions', function(req, res) {
+app.get('/solutions', (req, res) => {
   console.log('You have reached the Solutions route!');
   res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
 
-app.get('/thank-you', function(req, res) {
+app.get('/thank-you', (req, res) => {
   console.log('You have reached the Thank You route!');
   res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
 
-app.get('/', function(req, res) {
+app.get('/', (req, res) => {
   console.log('You have reached the Index route!');
+  // console.dir(req.body);
   res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
 
-app.get('/*', function(req, res) {
+app.get('/*', (req, res) => {
   console.log('You have reached the Error route!');
   res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
   // res.send('<h1>Sorry, but the page you requested does not exist.</h1>');
