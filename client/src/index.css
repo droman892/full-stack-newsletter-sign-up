@@ -10,8 +10,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
+main {
+  flex: 1 0 auto;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -29,29 +36,6 @@ code {
   padding-bottom: 20px;
 }
 
-.message {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-  text-align: center;
-  min-height: 95vh;
-  
-}
-
-
-
-footer {
-  margin-top: auto;
-}
-
-main {
-  min-height: 100%;
-}
-
-
-
-
 .pad {
   padding: 15px 0px;
 }
@@ -60,3 +44,28 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+footer {
+  margin-top: auto;
+}
+
+
+
+
+
+
+
+
+/* .message {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  text-align: center;
+  min-height: 95vh;
+  
+} */
+
+/* main {
+  min-height: 100%;
+} */
