@@ -8,7 +8,10 @@ const Index = () => {
         <div>
           <Nav/>
           
-          <FormContainer/>
+          <main>
+            <FormContainer/>
+          </main>
+
           <Footer/>
         </div>
     )

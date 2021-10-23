@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 const Footer = () => {
 
     return (
-        <div class="page-footer sticky purple darken-4">
+        <footer class="page-footer purple darken-4">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
@@ -38,11 +38,11 @@ const Footer = () => {
           </div>
           <div class='footer-copyright pad'>
             <div class='container'>
-            © 2021 REI-DR Enterprises, Inc. All Rights Reserved.
-            <Link to='/privacy' class='grey-text text-lighten-4'>Privacy Statement</Link>
+              © 2021 REI-DR Enterprises, Inc. All Rights Reserved.
+              <Link to='/privacy' class='grey-text text-lighten-4'>Privacy Statement</Link>
             </div>
           </div>
-        </div>
+        </footer>
     )
 }
 

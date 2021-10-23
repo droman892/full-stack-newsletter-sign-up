@@ -6,9 +6,11 @@ const Error = () => {
     return (
         <div>
           <Nav/>
-          <div  className='message'>
+
+          <main  className='message'>
             <h5>You've been routed to the Error page.  Thanks for stopping by!</h5>
-          </div>
+          </main>
+          
           <Footer/>
         </div>
     )

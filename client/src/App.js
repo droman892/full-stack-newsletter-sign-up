@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Index from './components/pages/Index';
 import About from './components/pages/About';
 import Careers from './components/pages/Careers';
@@ -9,18 +10,17 @@ import Privacy from './components/pages/Privacy';
 import Solutions from './components/pages/Solutions';
 import ThankYou from './components/pages/ThankYou';
 import StoreDisplay from './state/StoreDisplay';
+
 import {
   BrowserRouter as Router,
   Route,
   Switch
 } from "react-router-dom";
 
-//  use FormControlUnstyled for validation support
-// use FormGroup for checkbox and switch
 const App = () => {
     return (
       <Router>
-        <div>
+
           <Switch>
             <Route path='/home' exact component={Index}/>
             <Route path='/about' component={About}/>
@@ -37,7 +37,7 @@ const App = () => {
           <StoreDisplay/>
           {/* The Test component is for visualizing Redux state management
           <Test/> */}
-        </div>
+
       </Router>
     )
 }

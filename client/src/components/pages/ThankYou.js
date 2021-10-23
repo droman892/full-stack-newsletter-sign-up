@@ -10,13 +10,14 @@ const ThankYou = () => {
     return (
         <div>
             <Nav/>
-                <div className='message'>
-                    <h5>Thanks for submitting your info, {firstName}!</h5>
-                    <p>One of our agents will get back with you shortly.</p>
-                </div>
+
+            <main className='message'>
+                <h5>Thanks for submitting your info, {firstName}!</h5>
+                <p>One of our agents will get back with you shortly.</p>
+            </main>
+
             <Footer/>
         </div>
-        
         )
 }
 export default ThankYou;

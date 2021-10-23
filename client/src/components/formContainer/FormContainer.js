@@ -1,5 +1,4 @@
 import React from 'react';
-import M from "materialize-css";
 import Names from "./formFields/Names";
 import Phone from "./formFields/Phone";
 import Email from "./formFields/Email";
@@ -7,9 +6,6 @@ import Checkboxes from "./formFields/Checkboxes";
 import Radios from "./formFields/Radios";
 import TextArea from "./formFields/TextArea";
 import SubmitButton from "./formFields/SubmitButton";
-
-// import Calendar from "./formFields/Calendar";
-// import Range from "./formFields/Range";
 
 const FormContainer = () => {
 
@@ -54,15 +50,6 @@ const FormContainer = () => {
             <SubmitButton
               submitButtonLabel="Submit"
             />    
-
-            {/* <Calendar
-              calendar={"Your ideal move-in date?"}
-            /> */}
-
-            {/* <Range
-              rangeLabel="What's your budget for a monthly mortgage payment?"
-            /> */}
-
           </form>
         </div>
       </div>

@@ -1,5 +1,4 @@
 import React from 'react';
-// import phoneReducer from '../../../state/reducers/phoneReducer';
 
 import {useSelector, useDispatch} from 'react-redux';
 import {bindActionCreators} from 'redux';
