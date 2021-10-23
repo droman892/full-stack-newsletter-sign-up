@@ -11,7 +11,6 @@ const Nav = () => {
       });
     });
     
-
     return (
         <header>
             <nav>
