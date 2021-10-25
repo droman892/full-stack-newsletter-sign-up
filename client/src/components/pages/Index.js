@@ -5,7 +5,7 @@ import Footer from '../layout/Footer';
 
 const Index = () => {
     return (
-        <div>
+        <>
           <Nav/>
           
           <main>
@@ -13,7 +13,7 @@ const Index = () => {
           </main>
 
           <Footer/>
-        </div>
+        </>
     )
 }
 

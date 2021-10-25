@@ -8,16 +8,17 @@ const ThankYou = () => {
     const firstName = useSelector((state) => state.firstName);
 
     return (
-        <div>
+        <>
             <Nav/>
 
-            <main className='message'>
-                <h5>Thanks for submitting your info, {firstName}!</h5>
-                <p>One of our agents will get back with you shortly.</p>
+            <main>
+                <h5 className='message'>Thanks for submitting your info, {firstName}!</h5>
+                <h5 className='message'>One of our agents will get back with you shortly.</h5>
             </main>
 
             <Footer/>
-        </div>
-        )
+        </>
+    )
 }
+
 export default ThankYou;

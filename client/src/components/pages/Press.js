@@ -4,15 +4,16 @@ import Footer from '../layout/Footer';
 
 const Press = () => {
     return (
-        <div>
+        <>
           <Nav/>  
 
-          <main  className='message'>
-            <h5>You've been routed to the Press page.  Thanks for stopping by!</h5>
+          <main>
+            <h5 className='message'>You've been routed to the Press page.</h5>
+            <h5 className='message'>Thanks for stopping by!</h5>
           </main>
           
           <Footer/>
-        </div>
+        </>
     )
 }
 

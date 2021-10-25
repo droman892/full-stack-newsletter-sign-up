@@ -1,4 +1,6 @@
 import React from 'react';
+import './FormContainer.css';
+
 import Names from "./formFields/Names";
 import Phone from "./formFields/Phone";
 import Email from "./formFields/Email";
@@ -14,10 +16,9 @@ const FormContainer = () => {
     }
     
     return (
-      <div className="form">
         <div class="row form-container"> 
           <div className="form-header">
-            <h5>Newsletter Sign-up</h5>
+            <h5 className='newsletter-head'>Newsletter Sign-up</h5>
           </div>
           <form class="col s12" onSubmit={manageSubmit} action='/home' method='POST'> 
             <Names
@@ -52,7 +53,6 @@ const FormContainer = () => {
             />    
           </form>
         </div>
-      </div>
     )
 }
 

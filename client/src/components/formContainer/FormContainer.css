@@ -1,0 +1,15 @@
+.form-container {
+    max-width: 750px;
+    padding: 50px 10px;
+  }
+
+.form-header {
+  margin: auto;
+  width: 55%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.newsletter-head {
+  font-weight: 700;
+}

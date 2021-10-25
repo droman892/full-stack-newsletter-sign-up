@@ -1,5 +1,5 @@
 /* this was added to account for optimized mobile displays */
-/* html {
+html {
   height: 100%;
 }
 
@@ -16,56 +16,18 @@ body {
   flex-direction: column;
 }
 
-main {
-  flex: 1 0 auto;
-}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
-.form-container {
-  max-width: 750px;
-  padding: 50px 10px;
-}
-
-.form-header {
-  margin: auto;
-  width: 55%;
+.message {
   text-align: center;
-  padding-bottom: 20px;
+  margin-top: 100px;
+  font-weight: 700;
 }
 
-.pad {
-  padding: 15px 0px;
+main {
+  min-height: 80vh; 
+  margin: 5%;
 }
-
-.sticky {
-  display: flex;
-  flex-direction: column;
-}
-
-footer {
-  margin-top: auto;
-} */
-
-
-
-
-
-
-
-
-/* .message {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-  text-align: center;
-  min-height: 95vh;
-  
-} */
-
-/* main {
-  min-height: 100%;
-} */
