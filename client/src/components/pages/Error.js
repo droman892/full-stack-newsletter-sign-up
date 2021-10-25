@@ -8,7 +8,8 @@ const Error = () => {
           <Nav/>
 
           <main>
-            <h5 className='message'>You've been routed to the Error page.</h5>
+            <h5 className='message'>Oops, it looks like the resource you requested doesn't exist, so you've
+            been redirected to the Error page.</h5>
             <h5 className='message'>Thanks for stopping by!</h5>
           </main>
           

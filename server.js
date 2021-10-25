@@ -53,9 +53,10 @@ app.get('/contact', (req, res) => {
   res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
 
-
-
-
+app.get('/error', (req, res) => {
+  console.log('You have reached the Error route!');
+  res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+});
 
 app.get('/home', (req, res) => {
   console.log('You have reached the Home route!');
@@ -97,8 +98,9 @@ app.get('/', (req, res) => {
 
 app.get('/*', (req, res) => {
   console.log('You have reached the Error route!');
+  res.redirect('/error');
   res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
-  // res.send('<h1>Sorry, but the page you requested does not exist.</h1>');
+  
 });
 
 app.listen(PORT, () => console.log(`The application is being served on localhost:${PORT}`));
