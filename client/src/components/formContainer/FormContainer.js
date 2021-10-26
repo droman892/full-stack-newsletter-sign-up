@@ -43,6 +43,8 @@ const FormContainer = () => {
         'Comments': comments
     };
 
+    console.log(formData);
+
     axios.post('/home', {
       firstName, 
       lastName, 
@@ -55,7 +57,8 @@ const FormContainer = () => {
       checkbox5, 
       radioMarked, 
       comments})
-      .then((result) => {console.log(result)});
+      .then((result) => {console.log(result)})
+      .catch((error) => {console.log(error)});
   }
 
     return (
