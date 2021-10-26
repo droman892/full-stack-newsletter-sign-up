@@ -9,22 +9,20 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 app.use(express.static(path.join(__dirname, 'client/build')));
 
-const mainRoutes = require('./client/routes');
+const indexRouter = require('./client/routes/index');
 const aboutRouter = require('./client/routes/about');
 const careersRouter = require('./client/routes/careers');
 const contactRouter = require('./client/routes/contact');
-const homeRouter = require('./client/routes/home');
 const pressRouter = require('./client/routes/press');
 const privacyRouter = require('./client/routes/privacy');
 const solutionsRouter = require('./client/routes/solutions');
 const thankYouRouter = require('./client/routes/thank-you');
 const errorRouter = require('./client/routes/error');
 
-app.use(mainRoutes);
+app.use('/', indexRouter);
 app.use('/about', aboutRouter);
 app.use('/careers', careersRouter);
 app.use('/contact', contactRouter);
-app.use('/home', homeRouter);
 app.use('/press', pressRouter);
 app.use('/privacy', privacyRouter);
 app.use('/solutions', solutionsRouter);

@@ -45,7 +45,7 @@ const FormContainer = () => {
 
     console.log(formData);
 
-    axios.post('/home', {
+    axios.post('/', {
       firstName, 
       lastName, 
       phoneNum, 
@@ -66,7 +66,7 @@ const FormContainer = () => {
           <div className="form-header">
             <h5 className='newsletter-head'>Newsletter Sign-up</h5>
           </div>
-          <form class="col s12" onSubmit={manageSubmit} action='/home' method='post'> 
+          <form class="col s12" onSubmit={manageSubmit} action='/' method='post'> 
             <Names
               firstName={"First Name"}
               lastName={"Last Name"}

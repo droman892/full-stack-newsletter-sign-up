@@ -7,7 +7,7 @@ router.get('/', (req, res) => {
   if (name) {
     res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
   } else {
-    res.redirect('/home')
+    res.redirect('/')
   }
 });
 
