@@ -1,10 +1,14 @@
 const express = require('express');
-let router = express.Router();
+const router = express.Router();
 const path = require('path');
 
-router.get('/', function(req, res) {
-    console.log('Welcome to the application');
+router.get('/', (req, res) => {
+  const name = req.body.firstName;
+  if (name) {
     res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
-  });
+  } else {
+    res.redirect('/home')
+  }
+});
 
 module.exports = router;

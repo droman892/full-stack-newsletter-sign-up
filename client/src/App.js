@@ -26,11 +26,11 @@ const App = () => {
             <Route path='/about' component={About}/>
             <Route path='/careers' component={Careers}/>
             <Route path='/contact' component={Contact}/>
-            <Route path='/error' component={Error}/>
             <Route path='/press' component={Press}/>
             <Route path='/privacy' component={Privacy}/>
             <Route path='/solutions' component={Solutions}/>
             <Route path='/thank-you' component={ThankYou}/>
+            <Route path='/*' component={Error}/>
           </Switch>
           
           {/* Displays the state of all of the newsletter components */}
