@@ -5,6 +5,7 @@ const app = express();
 const path = require('path');
 const PORT = process.env.PORT || 5000;
 
+app.use(express.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 // const mainRoutes = require('./client/routes');
@@ -60,13 +61,11 @@ app.get('/error', (req, res) => {
 
 app.get('/home', (req, res) => {
   console.log('You have reached the Home route!');
-  console.dir(req.body);
   res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
 
 app.post('/home', (req, res) => {
-  // console.log('You have reached the Home route!');
-  console.dir(req.body);
+  console.log(req.body);
   res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
 
@@ -90,11 +89,11 @@ app.get('/thank-you', (req, res) => {
   res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
 
-app.get('/', (req, res) => {
-  console.log('You have reached the Index route!');
-  // console.dir(req.body);
-  res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
-});
+// app.get('/', (req, res) => {
+//   console.log('You have reached the Index route!');
+//   res.redirect('/home');
+//   res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+// });
 
 app.get('/*', (req, res) => {
   console.log('You have reached the Error route!');
