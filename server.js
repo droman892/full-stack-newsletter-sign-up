@@ -17,6 +17,7 @@ const pressRouter = require('./client/routes/press');
 const privacyRouter = require('./client/routes/privacy');
 const solutionsRouter = require('./client/routes/solutions');
 const thankYouRouter = require('./client/routes/thank-you');
+const testRouter = require('./client/routes/test');
 const errorRouter = require('./client/routes/error');
 
 app.use('/', indexRouter);
@@ -27,6 +28,7 @@ app.use('/press', pressRouter);
 app.use('/privacy', privacyRouter);
 app.use('/solutions', solutionsRouter);
 app.use('/thank-you', thankYouRouter);
+app.use('/test', testRouter);
 app.use('/*', errorRouter);
 
 app.listen(PORT, () => console.log(`The application is being served on localhost:${PORT}`));
