@@ -3,6 +3,9 @@ import React from 'react';
 // import Footer from '../layout/Footer';
 
 const Test = () => {
+
+    document.title = 'Test - DR Enterprises';
+
     return (
         <>
         </>

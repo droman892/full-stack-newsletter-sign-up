@@ -3,6 +3,9 @@ import Nav from  '../layout/Nav';
 import Footer from '../layout/Footer';
 
 const Privacy = () => {
+
+  document.title = 'Privacy - DR Enterprises';
+
     return (
         <>
           <Nav/>

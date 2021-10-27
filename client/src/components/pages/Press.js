@@ -3,6 +3,9 @@ import Nav from  '../layout/Nav';
 import Footer from '../layout/Footer';
 
 const Press = () => {
+
+  document.title = 'Press - DR Enterprises';
+
     return (
         <>
           <Nav/>  

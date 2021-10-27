@@ -3,6 +3,9 @@ import Nav from  '../layout/Nav';
 import Footer from '../layout/Footer';
 
 const About = () => {
+
+  document.title = 'About - DR Enterprises';
+
     return (
         <>
           <Nav/>

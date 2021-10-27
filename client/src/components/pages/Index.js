@@ -4,6 +4,9 @@ import FormContainer from '../formContainer/FormContainer';
 import Footer from '../layout/Footer';
 
 const Index = () => {
+
+  document.title = 'DR Enterprises';
+
     return (
         <>
           <Nav/>

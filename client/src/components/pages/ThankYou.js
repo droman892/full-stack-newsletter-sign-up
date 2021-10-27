@@ -5,6 +5,8 @@ import {useSelector} from 'react-redux';
 
 const ThankYou = () => {
 
+    document.title = 'Thank You - DR Enterprises';
+
     const firstName = useSelector((state) => state.firstName);
 
     return (

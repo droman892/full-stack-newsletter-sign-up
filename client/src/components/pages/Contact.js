@@ -3,6 +3,9 @@ import Nav from  '../layout/Nav';
 import Footer from '../layout/Footer';
 
 const Contact = () => {
+
+  document.title = 'Contact - DR Enterprises';
+
     return (
         <>
           <Nav/>

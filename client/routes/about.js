@@ -3,7 +3,7 @@ const router = express.Router();
 const path = require('path');
 
 router.get('/', (req, res) => {
-  console.log('You have reached the About route');
+  console.log('You have reached the About route!');
   res.sendFile(path.join(__dirname, '../build', 'index.html'));
   });
 
