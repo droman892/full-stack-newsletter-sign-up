@@ -9,18 +9,6 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-  console.log('********************BELOW IS THE SUBMITTED FORM DATA********************')
-  console.log('First Name: ' + req.body.firstName);
-  console.log('Last Name: ' + req.body.lastName);
-  console.log('Phone Number: ' + req.body.phoneNum);
-  console.log('Email: ' + req.body.email);
-  console.log('Checkbox 1: ' + req.body.checkbox1);
-  console.log('Checkbox 2: ' + req.body.checkbox2);
-  console.log('Checkbox 3: ' + req.body.checkbox3);
-  console.log('Checkbox 4: ' + req.body.checkbox4);
-  console.log('Checkbox 5: ' + req.body.checkbox5);
-  console.log('Radio Marked: ' + req.body.radioMarked);
-  console.log('Comments (Optional): ' + req.body.comments);
 
   const firstName = req.body.firstName;
   const lastName = req.body.lastName;
@@ -33,6 +21,19 @@ router.post('/', (req, res) => {
   const checkbox5 = req.body.checkbox5;
   const radioMarked = req.body.radioMarked;
   const comments = req.body.comments;
+
+  console.log('********************BELOW IS THE SUBMITTED FORM DATA********************')
+  console.log('First Name: ' + firstName);
+  console.log('Last Name: ' + lastName);
+  console.log('Phone Number: ' + phoneNum);
+  console.log('Email: ' + email);
+  console.log('Checkbox 1: ' + checkbox1);
+  console.log('Checkbox 2: ' + checkbox2);
+  console.log('Checkbox 3: ' + checkbox3);
+  console.log('Checkbox 4: ' + checkbox4);
+  console.log('Checkbox 5: ' + checkbox5);
+  console.log('Radio Marked: ' + radioMarked);
+  console.log('Comments (Optional): ' + comments);
 
   const newSubmission = new Submission({
     firstName,
@@ -50,12 +51,7 @@ router.post('/', (req, res) => {
 
   newSubmission.save();
 
-  // console.log(req.path + 'error');
   res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
 });
-
-router.get('/submissions').get((req, res) => {
-  Submission.find().then(postedSubmissions => res.json(postedSubmissions))
-})
 
 module.exports = router;

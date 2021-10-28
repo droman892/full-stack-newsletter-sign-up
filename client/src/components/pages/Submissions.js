@@ -22,7 +22,15 @@ const Submissions = () => {
     const [submissions, setSubmissions] = useState([{
         firstName,
         lastName,
-        phoneNum
+        phoneNum,
+        email,
+        checkbox1,
+        checkbox2,
+        checkbox3,
+        checkbox4,
+        checkbox5,
+        radioMarked,
+        comments
     }])
 
     useEffect(() => {

@@ -45,8 +45,21 @@ const FormContainer = () => {
 
     console.log(formData);
 
-    axios.post('/', formData);
-    
+    axios.post('/', {
+      firstName, 
+      lastName, 
+      phoneNum, 
+      email, 
+      checkbox1, 
+      checkbox2, 
+      checkbox3, 
+      checkbox4, 
+      checkbox5, 
+      radioMarked, 
+      comments})
+      .then((result) => {console.log(result)})
+      .catch((error) => {console.log(error)});
+
   }
 
     return (
