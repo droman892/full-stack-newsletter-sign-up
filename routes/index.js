@@ -10,6 +10,9 @@ router.get('/', (req, res) => {
 
 router.post('/', (req, res) => {
 
+  const today = new Date();
+  const submissionDate = (today.getMonth()+1)+'-'+today.getDate()+'-'+today.getFullYear();
+
   const firstName = req.body.firstName;
   const lastName = req.body.lastName;
   const phoneNum = req.body.phoneNum;
@@ -23,6 +26,7 @@ router.post('/', (req, res) => {
   const comments = req.body.comments;
 
   console.log('***************BELOW IS THE SUBMITTED FORM DATA ON THE / ROUTE***************')
+  console.log('Submission Date: ' + submissionDate)
   console.log('First Name: ' + firstName);
   console.log('Last Name: ' + lastName);
   console.log('Phone Number: ' + phoneNum);

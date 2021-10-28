@@ -7,8 +7,8 @@ const Submissions = () => {
 
     document.title = 'Submissions - DR Enterprises';
 
-    // const dt = new Date();
-    // document.getElementById('date-time').innerHTML=dt;
+    const today = new Date();
+    const submissionDate = (today.getMonth()+1)+'-'+today.getDate()+'-'+today.getFullYear();
 
     const firstName = useSelector((state) => state.firstName);
     const lastName = useSelector((state) => state.lastName);
@@ -23,6 +23,7 @@ const Submissions = () => {
     const comments = useSelector((state) => state.comments);
 
     const [submissions, setSubmissions] = useState([{
+        submissionDate,
         firstName,
         lastName,
         phoneNum,
@@ -52,7 +53,7 @@ const Submissions = () => {
                     <h3 className='submission-head'>Newsletter Data Submissions</h3>
                     {submissions.map(submission =>
                         <div className='submission-container'>
-                            <h5 className='submission-date'>Date/Time Stamp: <span id='date-time'></span></h5>
+                            <h5 className='submission-date'>{submissionDate}</h5>
                             <p>
                                 <span className='submission-label'>First Name:</span> {submission.firstName}
                             </p>

@@ -14,6 +14,9 @@ import SubmitButton from "./formFields/SubmitButton";
 
 const FormContainer = () => {
 
+  const today = new Date();
+  const submissionDate = (today.getMonth()+1)+'-'+today.getDate()+'-'+today.getFullYear();
+
   const firstName = useSelector((state) => state.firstName);
   const lastName = useSelector((state) => state.lastName);
   const phoneNum = useSelector((state) => state.phoneNum);
@@ -31,6 +34,7 @@ const FormContainer = () => {
 
     const formData = {
         '***FORM DATA POSTED TO': '/ ROUTE***',
+        'Submission Date': submissionDate,
         'First Name': firstName,
         'Last Name': lastName,
         'Phone Number': phoneNum,
@@ -48,6 +52,7 @@ const FormContainer = () => {
 
     axios.post('/', {
       '***FORM DATA POSTED TO': '/ ROUTE***',
+      submissionDate,
       firstName, 
       lastName, 
       phoneNum, 

@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
 const formSchema = {
+    submissionDate: Date,
     firstName: String,
     lastName: String,
     phoneNum: Number,
