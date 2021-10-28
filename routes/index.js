@@ -40,6 +40,7 @@ router.post('/', (req, res) => {
   console.log('Comments (Optional): ' + comments);
 
   const newSubmission = new Submission({
+    submissionDate,
     firstName,
     lastName,
     phoneNum,
