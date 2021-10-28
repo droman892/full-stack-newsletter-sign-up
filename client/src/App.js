@@ -9,7 +9,7 @@ import Press from './components/pages/Press';
 import Privacy from './components/pages/Privacy';
 import Solutions from './components/pages/Solutions';
 import ThankYou from './components/pages/ThankYou';
-import Test from './components/pages/Test';
+import Submissions from './components/pages/Submissions';
 import StoreDisplay from './state/StoreDisplay';
 
 import {
@@ -31,7 +31,7 @@ const App = () => {
             <Route path='/privacy' component={Privacy}/>
             <Route path='/solutions' component={Solutions}/>
             <Route path='/thank-you' component={ThankYou}/>
-            <Route path='/test' component={Test}/>
+            <Route path='/submissions' component={Submissions}/>
             <Route path='/*' component={Error}/>
           </Switch>
           

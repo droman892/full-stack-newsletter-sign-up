@@ -5,7 +5,7 @@ const path = require('path');
 router.get('/', (req, res) => {
   const name = req.body.firstName;
   if (name) {
-    res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+    res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
   } else {
     res.redirect('/')
   }

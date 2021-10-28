@@ -7,7 +7,7 @@ router.get('/*', (req, res) => {
   if (req.baseUrl != '/error') {
     res.redirect('/error')
   } else {
-    res.sendFile(path.join(__dirname, '../build', 'index.html'));
+    res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
   }
 });
 
