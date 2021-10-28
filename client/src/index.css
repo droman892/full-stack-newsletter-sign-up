@@ -31,3 +31,29 @@ main {
   min-height: 80vh; 
   margin: 5%;
 }
+
+.submission-container {
+  background-color: rgba(128, 0, 128, 0.247);
+  max-width: 920px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 10px 5px 10px;
+  margin-bottom: 15px;
+}
+
+.submission-date {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.submission-head {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.submission-label {
+  font-weight: 600;
+}
