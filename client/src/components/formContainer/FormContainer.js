@@ -30,6 +30,7 @@ const FormContainer = () => {
     e.preventDefault();
 
     const formData = {
+        '***FORM DATA POSTED TO': '/ ROUTE***',
         'First Name': firstName,
         'Last Name': lastName,
         'Phone Number': phoneNum,
@@ -46,6 +47,7 @@ const FormContainer = () => {
     console.log(formData);
 
     axios.post('/', {
+      '***FORM DATA POSTED TO': '/ ROUTE***',
       firstName, 
       lastName, 
       phoneNum, 

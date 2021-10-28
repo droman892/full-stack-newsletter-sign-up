@@ -34,7 +34,7 @@ const Submissions = () => {
     }])
 
     useEffect(() => {
-        fetch('/').then(res => {
+        fetch('/submissions').then(res => {
             if (res.ok) {
                 return res.json()
             }
@@ -49,8 +49,8 @@ const Submissions = () => {
                     <h1>Submissions</h1>
                     {submissions.map(submission =>
                         <div>
-                            <p>submission.firstName</p>
-                            <p>submission.lastName</p>
+                            <p>{submission.firstName}</p>
+                            <p>{submission.lastName}</p>
                         </div>
                     )}
                 </main>

@@ -22,7 +22,7 @@ router.post('/', (req, res) => {
   const radioMarked = req.body.radioMarked;
   const comments = req.body.comments;
 
-  console.log('********************BELOW IS THE SUBMITTED FORM DATA********************')
+  console.log('***************BELOW IS THE SUBMITTED FORM DATA ON THE / ROUTE***************')
   console.log('First Name: ' + firstName);
   console.log('Last Name: ' + lastName);
   console.log('Phone Number: ' + phoneNum);

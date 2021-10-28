@@ -7,8 +7,8 @@ router.get('/', (req, res) => {
   console.log('You have reached the Submissions route!');
 
   Submission.find().then(postedSubmissions => res.json(postedSubmissions));
-  
-  res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
+
+  // res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
 });
 
 module.exports = router;
