@@ -62,7 +62,7 @@ const Submissions = () => {
                 <Nav/>
 
                     <main>
-                        <h3 className='submission-head'>Data is loading...</h3>
+                        <h3 className='submission-head space'>Data is loading...</h3>
                     </main>
 
                 <Footer/>

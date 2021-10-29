@@ -1,3 +1,15 @@
 footer.page-footer {
     background-color: purple;
 }
+
+.link {
+    text-align: center;
+}
+
+.link:hover {
+    background-color: rgba(128, 0, 0, 0.1);
+}
+
+.privacy {
+    float: right;
+}

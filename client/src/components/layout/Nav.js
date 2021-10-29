@@ -9,7 +9,7 @@ const Nav = () => {
             <nav>
                 <div class="nav-wrapper">
                     <div className='container'>
-                        <Link to='/' class="brand-logo">DR Enterprises</Link>
+                        <Link to='/' class="brand-logo">REI-DR, Inc.</Link>
                         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                         
                         <ul class="right hide-on-med-and-down">
