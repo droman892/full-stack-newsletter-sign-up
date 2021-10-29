@@ -22,7 +22,9 @@ const Submissions = () => {
     const radioMarked = useSelector((state) => state.radioMarked);
     const comments = useSelector((state) => state.comments);
 
-    const [submissions, setSubmissions] = useState([{
+    const [loading, setLoading] = useState(false);
+
+    const [submissionMade, setSubmission] = useState([{
         submissionDate,
         firstName,
         lastName,
@@ -38,12 +40,25 @@ const Submissions = () => {
     }])
 
     useEffect(() => {
-        fetch('/submissions').then(res => {
-            if (res.ok) {
-                return res.json()
-            }
-        }).then(jsonRes => setSubmissions(jsonRes))
-    })
+        setLoading(true);
+        fetch('/submissions')
+            .then(res => {
+                if (res.ok) {
+                    return res.json()
+                }
+        })
+        .then(jsonRes => setSubmission(jsonRes))
+        .catch((err) => {
+            console.log(err);
+        })
+        .finally(() => {
+            setLoading(false);
+        })
+    }, []);
+
+    if (loading) {
+        return <p>Data is loading...</p>;
+      }
 
     return (
         <>
@@ -51,7 +66,7 @@ const Submissions = () => {
 
                 <main>
                     <h3 className='submission-head'>Newsletter Data Submissions</h3>
-                    {submissions.map(submission =>
+                    {submissionMade.map(submission =>
                         <div className='submission-container'>
                             <h5 className='submission-date'>{submissionDate}</h5>
                             <p>
@@ -67,7 +82,7 @@ const Submissions = () => {
                                 <span className='submission-label'>Email:</span> {submission.email}
                             </p>
                             <p>
-                                <span className='submission-label'>Checkbox 1:</span> {submission.checkbox1}
+                                <span className='submission-label'>Checkbox 1:</span> {submissionMade.checkbox1}
                             </p>
                             <p>
                                 <span className='submission-label'>Checkbox 2:</span> {submission.checkbox2}
@@ -76,7 +91,7 @@ const Submissions = () => {
                                 <span className='submission-label'>Checkbox 3:</span> {submission.checkbox3}
                             </p>
                             <p>
-                                <span className='submission-label'>Checkbox 4:</span> {submission.checkbox4}
+                                <span className='submission-label'>Checkbox 4:</span> {submissionMade.checkbox4}
                             </p>
                             <p>
                                 <span className='submission-label'>Checkbox 5:</span> {submission.checkbox5}
@@ -85,7 +100,7 @@ const Submissions = () => {
                                 <span className='submission-label'>Radio Marked:</span> {submission.radioMarked}
                             </p>
                             <p>
-                                <span className='submission-label'>Comments (Optional):</span> {submission.comments}
+                                <span className='submission-label'>Comments (Optional):</span> {submissionMade.comments}
                             </p>
 
                         </div>
