@@ -57,8 +57,18 @@ const Submissions = () => {
     }, []);
 
     if (loading) {
-        return <p>Data is loading...</p>;
-      }
+        return (
+            <>
+                <Nav/>
+
+                    <main>
+                        <h3 className='submission-head'>Data is loading...</h3>
+                    </main>
+
+                <Footer/>
+            </>
+        )
+    }
 
     return (
         <>
@@ -102,7 +112,6 @@ const Submissions = () => {
                             <p>
                                 <span className='submission-label'>Comments (Optional):</span> {submissionMade.comments}
                             </p>
-
                         </div>
                     )}
                 </main>
