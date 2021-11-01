@@ -9,7 +9,6 @@ import checkbox2Reducer from './checkbox2Reducer';
 import checkbox3Reducer from './checkbox3Reducer';
 import checkbox4Reducer from './checkbox4Reducer';
 import checkbox5Reducer from './checkbox5Reducer';
-
 import textAreaReducer from './textAreaReducer';
 
 import accountReducer from './accountReducer';
@@ -24,13 +23,8 @@ const reducers = combineReducers({
     checkbox3: checkbox3Reducer,
     checkbox4: checkbox4Reducer,
     checkbox5: checkbox5Reducer,
-
-
-
-    
     radioMarked: radioReducer,
     comments: textAreaReducer,
-
 
     account: accountReducer
 });

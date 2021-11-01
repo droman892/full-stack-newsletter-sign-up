@@ -5,11 +5,16 @@
 
 .form-header {
   margin: auto;
-  width: 55%;
+  max-width: 75%;
   text-align: center;
   padding-bottom: 20px;
 }
 
 .newsletter-head {
   font-weight: 700;
+}
+
+.invisible-date {
+  display: none;
+  visibility: hidden;
 }

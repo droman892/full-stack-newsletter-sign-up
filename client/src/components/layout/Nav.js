@@ -35,6 +35,28 @@ const Nav = () => {
                     </div>
                 </div>
             </nav>
+
+            <ul class="sidenav" id="mobile-demo">
+                <li>
+                    <Link to='/'>Home</Link>
+                </li>
+                <li>
+                    <Link to='/about'>About</Link>
+                </li>
+                <li>
+                    <Link to='/solutions'>Solutions</Link>
+                </li>
+                <li>
+                    <Link to='/press'>Press</Link>
+                </li>
+                <li>
+                    <Link to='/careers'>Careers</Link>
+                </li>
+                <li>
+                    <Link to='/contact'>Contact</Link>
+                </li>
+            </ul>
+
         </header>
     )
 }

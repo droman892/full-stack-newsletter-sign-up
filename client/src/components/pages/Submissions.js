@@ -62,7 +62,7 @@ const Submissions = () => {
                 <Nav/>
 
                     <main>
-                        <h3 className='submission-head space'>Data is loading...</h3>
+                        <h3 className='submission-head space'>The submitted newsletter form data is loading...</h3>
                     </main>
 
                 <Footer/>
@@ -110,7 +110,7 @@ const Submissions = () => {
                                 <span className='submission-label'>Radio Marked:</span> {submission.radioMarked}
                             </p>
                             <p>
-                                <span className='submission-label'>Comments (Optional):</span> {submissionMade.comments}
+                                <span className='submission-label'>Comments (Optional):</span> {submission.comments}
                             </p>
                         </div>
                     )}

@@ -16,7 +16,7 @@ const FormContainer = () => {
 
   const today = new Date();
   const submissionDate = (today.getMonth()+1)+'-'+today.getDate()+'-'+today.getFullYear();
-
+  
   const firstName = useSelector((state) => state.firstName);
   const lastName = useSelector((state) => state.lastName);
   const phoneNum = useSelector((state) => state.phoneNum);
