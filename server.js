@@ -8,9 +8,14 @@ const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(express.urlencoded({extended: false}));
 
-mongoose.connect('mongodb+srv://david-admin:TiQ6tkf4bxgThxM7@full-stack-newsletter-c.mopns.mongodb.net/newsletterDB');
+// Connection to Mongo DB Atlas via processEnvPort for Heroku or localhost
+mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://david-admin:TiQ6tkf4bxgThxM7@full-stack-newsletter-c.mopns.mongodb.net/newsletterDB');
+
+mongoose.connection.on('connected', () => {
+    console.log('Mongoose is connected!');
+})
 
 app.use(express.static(path.join(__dirname, 'client/build')));
 
@@ -35,5 +40,9 @@ app.use('/solutions', solutionsRouter);
 app.use('/thank-you', thankYouRouter);
 app.use('/submissions', submissionsRouter);
 app.use('/*', errorRouter);
+
+if (process.env.NODE_ENV === ' production') {
+    app.use(express.static('client/build'));
+}
 
 app.listen(PORT, () => console.log(`The application is being served on localhost:${PORT}`));
