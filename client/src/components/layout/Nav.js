@@ -1,8 +1,15 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './Nav.css';
 import {Link} from "react-router-dom";
 
+import M from "materialize-css/dist/js/materialize.min.js";
+
 const Nav = () => {
+
+    useEffect(() => {
+        let sidenav = document.querySelector('#slide-out');
+        M.Sidenav.init(sidenav, {});
+      }, []);
 
     return (
         <header>
@@ -10,7 +17,8 @@ const Nav = () => {
                 <div class="nav-wrapper">
                     <div className='container'>
                         <Link to='/' class="brand-logo">REI-DR, Inc.</Link>
-                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                
+                        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                         
                         <ul class="right hide-on-med-and-down">
                             <li>
@@ -36,9 +44,9 @@ const Nav = () => {
                 </div>
             </nav>
 
-            <ul class="sidenav" id="mobile-demo">
-                <li>
-                    <Link to='/'>Home</Link>
+            <ul id="slide-out" class="sidenav mobile">
+                <li className='sidenav-text'>
+                    <Link to='/' className='sidenav-text'>Home</Link>
                 </li>
                 <li>
                     <Link to='/about'>About</Link>
