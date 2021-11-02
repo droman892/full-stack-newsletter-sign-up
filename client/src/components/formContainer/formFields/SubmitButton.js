@@ -5,10 +5,14 @@ const SubmitButton = () => {
 
     return (
         <button 
-            class="btn waves-effect waves-light" 
+            class="btn purple text-lighten-3 waves-effect waves-light" 
             type='submit'
             name="action">
-            <Link to='/thank-you' class='grey-text text-lighten-3' type='submit'>Submit</Link>
+            <Link to='/thank-you' type='submit'>
+                <span className='submitter'>
+                    Submit
+                </span>
+            </Link>
         </button>
         )
 }

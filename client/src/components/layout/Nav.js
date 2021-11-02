@@ -9,7 +9,7 @@ const Nav = () => {
     useEffect(() => {
         let sidenav = document.querySelector('#slide-out');
         M.Sidenav.init(sidenav, {});
-      }, []);
+    }, []);
 
     return (
         <header>
@@ -45,23 +45,35 @@ const Nav = () => {
             </nav>
 
             <ul id="slide-out" class="sidenav mobile">
-                <li className='sidenav-text'>
-                    <Link to='/' className='sidenav-text'>Home</Link>
+                <li>
+                    <Link to='/'>
+                        <span className='sidenav-text'>Home</span>
+                    </Link>
                 </li>
                 <li>
-                    <Link to='/about'>About</Link>
+                    <Link to='/about'>
+                        <span className='sidenav-text'>About</span>
+                    </Link>
                 </li>
                 <li>
-                    <Link to='/solutions'>Solutions</Link>
+                    <Link to='/solutions'>
+                        <span className='sidenav-text'>Solutions</span>
+                    </Link>
                 </li>
                 <li>
-                    <Link to='/press'>Press</Link>
+                    <Link to='/press'>
+                        <span className='sidenav-text'>Press</span>
+                    </Link>
                 </li>
                 <li>
-                    <Link to='/careers'>Careers</Link>
+                    <Link to='/careers'>
+                        <span className='sidenav-text'>Careers</span>
+                    </Link>
                 </li>
                 <li>
-                    <Link to='/contact'>Contact</Link>
+                    <Link to='/contact'>
+                        <span className='sidenav-text'>Contact</span>
+                    </Link>
                 </li>
             </ul>
 

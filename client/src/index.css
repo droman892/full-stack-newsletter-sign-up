@@ -62,3 +62,8 @@ main {
 .space {
   margin-top: 20%;
 }
+
+.submitter {
+  color: white;
+  z-index: inherit;
+}
