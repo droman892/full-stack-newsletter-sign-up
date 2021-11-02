@@ -4,10 +4,10 @@ import {useSelector, useDispatch} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {actionCreators} from '../../../state/index'
 
-document.addEventListener("DOMContentLoaded", function () {
-  const textNeedCount = document.querySelectorAll("#first_name, #last_name");
-  M.CharacterCounter.init(textNeedCount);
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//   const textNeedCount = document.querySelectorAll("#first_name, #last_name");
+//   M.CharacterCounter.init(textNeedCount);
+// });
 
 import M from "materialize-css/dist/js/materialize.min.js";
 
