@@ -1,15 +1,22 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 import {useSelector, useDispatch} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {actionCreators} from '../../../state/index'
 
-document.addEventListener("DOMContentLoaded", function () {
-  const textNeedCount = document.querySelectorAll("#comments");
-  M.CharacterCounter.init(textNeedCount);
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//   const textNeedCount = document.querySelectorAll("#comments");
+//   M.CharacterCounter.init(textNeedCount);
+// });
+
+import M from "materialize-css/dist/js/materialize.min.js";
 
 const TextArea = () => {
+
+  useEffect(() => {
+    const textNeedCount = document.querySelectorAll("#comments");
+    M.CharacterCounter.init(textNeedCount);
+  }, []);
 
     const comments = useSelector((state) => state.comments);
     const dispatch = useDispatch();

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 import {useSelector, useDispatch} from 'react-redux';
 import {bindActionCreators} from 'redux';
@@ -9,7 +9,14 @@ document.addEventListener("DOMContentLoaded", function () {
   M.CharacterCounter.init(textNeedCount);
 });
 
+import M from "materialize-css/dist/js/materialize.min.js";
+
 const Names = () => {
+
+  useEffect(() => {
+    const textNeedCount = document.querySelectorAll("#first_name, #last_name");
+    M.CharacterCounter.init(textNeedCount);
+  }, []);
 
     const firstName = useSelector((state) => state.firstName);
     const lastName = useSelector((state) => state.lastName);
