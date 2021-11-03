@@ -26,8 +26,6 @@
 
 ## Status
 
-<p align="center"> <img src="https://img.shields.io/tokegithubi/lines/github/droman892/full-stack-newsletter-sign-up" /> </p>
-
 <p align="center"> <img src="https://img.shields.io/github/languages/count/droman892/full-stack-newsletter-sign-up" /> </p>
 
 <p align="center"> <img src="https://img.shields.io/github/repo-size/droman892/full-stack-newsletter-sign-up" /> </p>
