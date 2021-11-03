@@ -1,8 +1,8 @@
-![Full Stack Newsletter Sign-up](https://user-images.githubusercontent.com/25372739/140000597-d4f2771a-3870-4b49-9270-7b8719b71781.png)
+![Full Stack Newsletter Sign-up1](https://user-images.githubusercontent.com/25372739/140000597-d4f2771a-3870-4b49-9270-7b8719b71781.png)
+
+![Full Stack Newsletter Sign-up2](https://user-images.githubusercontent.com/25372739/140001293-0362dbb9-b56a-4c0d-92ea-e47165b03cad.png)
 
 <p align="center"> This is a responsive, form application using MongoDB Atlas, Express, Node, and React. Materialize is the component library used for the responsive layout, and Redux manages the global state of the application. </p>  
-
-<p align="center"> As of 11/2/2021, this application was deployed through Heroku. </p>
 
 <p align="center"> :houses: :iphone: :email: :desktop_computer: :bank:</p>
 
@@ -15,6 +15,8 @@
 ## Preview
 
 ![Full Stack Newsletter Sign-up - GIF](https://user-images.githubusercontent.com/25372739/140001021-1982215b-bd23-4227-b7e6-d9c1149e59bf.gif)
+
+![Full Stack Newsletter Sign-up - MongoDB Atlas](https://user-images.githubusercontent.com/25372739/140001522-8c5dec34-c743-46b3-9599-e213555bb870.png)
 
 [Live Preview](https://full-stack-newsletter-sign-up.herokuapp.com/)
 
