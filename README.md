@@ -1,4 +1,4 @@
-![Full Stack Newsletter Sign-up]()
+![Full Stack Newsletter Sign-up](https://user-images.githubusercontent.com/25372739/140000597-d4f2771a-3870-4b49-9270-7b8719b71781.png)
 
 <p align="center"> This is a responsive, form application using MongoDB Atlas, Express, Node, and React. Materialize is the component library used for the responsive layout, and Redux manages the global state of the application. </p>  
 
@@ -14,7 +14,7 @@
 
 ## Preview
 
-![Full Stack Newsletter Sign-up - GIF]()
+![Full Stack Newsletter Sign-up - GIF](https://user-images.githubusercontent.com/25372739/140001021-1982215b-bd23-4227-b7e6-d9c1149e59bf.gif)
 
 [Live Preview](https://full-stack-newsletter-sign-up.herokuapp.com/)
 
@@ -24,7 +24,7 @@
 
 ## Status
 
-<p align="center"> <img src="https://img.shields.io/tokei/lines/github/droman892/full-stack-newsletter-sign-up" /> </p>
+<p align="center"> <img src="https://img.shields.io/tokegithubi/lines/github/droman892/full-stack-newsletter-sign-up" /> </p>
 
 <p align="center"> <img src="https://img.shields.io/github/languages/count/droman892/full-stack-newsletter-sign-up" /> </p>
 
