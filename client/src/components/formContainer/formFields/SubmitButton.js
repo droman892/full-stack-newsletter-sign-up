@@ -5,7 +5,7 @@ const SubmitButton = () => {
 
     return (
         <button 
-            class="btn purple text-lighten-3 waves-effect waves-light" 
+            class="btn purple text-lighten-3 waves-effect waves-light center" 
             type='submit'
             name="action">
             <Link to='/thank-you' type='submit'>

@@ -1,26 +1,26 @@
 ![Full Stack Newsletter Sign-up]()
 
-This is a responsive, sign-up form application using MongoDB, Express, Node, React, and Materialize. 
+<p align="center"> This is a responsive, form application using MongoDB Atlas, Express, Node, and React. Materialize is the component library used for the responsive layout, and Redux manages the global state of the application. </p>  
 
-<p align="center"> icons </p>
+<p align="center"> As of 11/2/2021, this application was deployed through Heroku. </p>
+
+<p align="center"> :houses: :iphone: :email: :desktop_computer: :bank:</p>
 
 ## Description
 
-<p align="center"> This application was built...</p>
+<p align="center"> This application was built specifically with the intention of incorporating Redux, server-side page rendering and routing, and a cloud database.</p>
 
-<p align="center"> Users are able to...</p>
-
-<p align="center"> Regarding UX, users enjoy...</p>
+<p align="center"> Users are able to enjoy a standardized layout with a top navigation and footer, with the top-nav converting into a side-nav for smaller viewports. Data submitted with the form can immediately be viewed from the MongoDB Atlas web console.</p>
 
 ## Preview
 
 ![Full Stack Newsletter Sign-up - GIF]()
 
-[Live Preview](http://david-roman.tech/full-stack-newsletter-sign-up/)
+[Live Preview](https://full-stack-newsletter-sign-up.herokuapp.com/)
 
 ## Business Use Case
 
-- Individual/Business needs...
+- Individual/Business needs a scalable application to intake user data
 
 ## Status
 
@@ -35,12 +35,14 @@ This is a responsive, sign-up form application using MongoDB, Express, Node, Rea
 - Clone the repo: `git clone https://github.com/droman892/full-stack-newsletter-sign-up.git` 
 ## Usage
 
-After the project files are downloaded, in the terminal, run `npm install` to install the dependencies, followed by `npm start` to start the application.  Once the project has loaded on to the browser, feel free to edit it as you see fit using `./src/index.css` and the component files in `./src/components`.
+After the project files are downloaded, in the terminal, in the root folder, run `npm run build` to install the dependencies and update the `build` folder within the `client` directory.  Then, run `npm run dev` to start the application (refer to `localhost:3000` when editing the front-end, and `localhost:5000` when editing the back-end).
 
 ## Roadmap
 
 This application is an on-going project, open to contributions and critique.  Functionality that would appropriately flesh out the application include the following:
-1) ...
+1) add content to all specified routes
+2) incorporate TypeScript
+3) incorporate automated testing
 
 ## Bugs and Issues
 
@@ -53,7 +55,7 @@ Please make sure to update tests as appropriate.
 
 ## About
 
-This React form application is maintained by [David Roman](https://www.linkedin.com/in/david-roman-front-end-engineer/).
+This MERN form application is maintained by [David Roman](https://www.linkedin.com/in/david-roman-front-end-engineer/).
 
 ## License
 
